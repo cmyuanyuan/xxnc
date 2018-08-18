@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xxnc.dao.OrderformMepper">
+    <!--<resultMap id="result-order" type="com.xxnc.pojo.Orderform">-->
+        <!--<id property="did" column="did"/>-->
+        <!--<id property="yid" column="yid"/>-->
+        <!--<id property="sid" column="sid"/>-->
+        <!--<id property="ddate" column="ddate"/>-->
+        <!--<id property="dnumber" column="dnumber"/>-->
+        <!--<id property="dprice" column="dprice"/>-->
+        <!--<id property="dstatus" column="dstatus"/>-->
+    <!--</resultMap>-->
+
+
+</mapper>

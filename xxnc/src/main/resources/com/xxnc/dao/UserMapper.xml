@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxnc.dao.UserMapper">
+  <resultMap id="result-user" type="com.xxnc.pojo.User">
+      <id property="yid" column="yid"/>
+      <result property="yname" column="yname"/>
+      <result property="yusername" column="yusername"/>
+      <result property="ypassword" column="ypassword"/>
+      <result property="yroot" column="yroot"/>
+  </resultMap>
+    
+    <select id="findByParam" resultMap="result-user">
+        select * from user
+        <where>
+            <if test="yname !=null and yname !=''">
+                and yname =#{yname}
+            </if>
+            <if test="ypassword !=null and ypassword !=null">
+                and ypassword =#{ypassword}
+            </if>
+        </where>
+    </select>
+</mapper>
